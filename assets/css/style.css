@@ -1028,7 +1028,7 @@ body {
 }
 
 .sponsorInfoIcon img {
-  height: 100px;
+  height: 80px;
 }
 
 .sponsorInfoBox {
@@ -1548,7 +1548,7 @@ textarea {
 
 /* news page css start  */
 .newBody h2 {
-  padding: 4rem 0rem 1rem 0rem;
+  padding: 7rem 0rem 1rem 0rem;
   font-size: 28px;
   text-align: left;
   text-transform: uppercase;
@@ -1556,7 +1556,7 @@ textarea {
 
 .newBodyImg img {
   width: 80%;
-  height: 60vh !important;
+  height: auto;
   text-align: left;
   transition: all 0.3s linear;
 }
@@ -1704,7 +1704,72 @@ option {
   border-radius: 5px;
 }
 
+/* privecy policy page css start from here  */
+/* ======================================== */
+.privecyPolicy {
+  text-align: left;
+}
 
+.privecyPolicy h4{
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: 'medum';
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+.privecyPolicy p{
+  font-size: 16px;
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 4px;
+}
+
+/* refund policy page css start from here  */
+/* ======================================== */
+.refundPolicy{
+  text-align: left;
+}
+.refundPolicy h2{
+  /* font-weight: bold; */
+  font-size: 26px;
+  color: var(--white);
+}
+.refundPolicy p{
+  font-size: 16px;
+  color: var(--white);
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1.5rem;
+}
+.refundPolicy p:first-child{
+  margin-top: 10px;
+}
+
+/* terms and condition page css start from here  */
+/* ============================================= */
+.termsAndCon{
+  text-align: left;
+}
+.termsAndCon h2{
+  font-size: 34px;
+  color: var(--white);
+  font-weight: bold;
+  font-family: 'medum';
+}
+.termsAndCon p{
+  font-size: 16px;
+  color: var(--white);
+  font-family: 'medum';
+}
+.termsAndCon h4{
+  font-size: 24px;
+  color: var(--white);
+  font-family: 'medum';
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
 /* index page responsive css start from here  */
 /* ========================================= */
 @media (max-width:1200px) {
@@ -2091,7 +2156,7 @@ Mobiles Menu
 }
 
 
-/* vip confarence page css start from here  */
+/* vip confarence page responsive  css start from here  */
 /* ======================================= */
 @media(max-width:991px) {
   .vipConHero {
@@ -2164,6 +2229,13 @@ Mobiles Menu
     line-height: 20px;
     margin-top: 5px;
   }
+  .vipUserFormInfo p {
+
+    width: 100%;
+}
+.vipConFormWrapper {
+  width: 90%;
+}
 }
 
 
@@ -2201,6 +2273,15 @@ Mobiles Menu
     font-size: 28px;
   }
 }
+@media(max-width:576px) {
+  .sponsorHeader h2{
+    font-size: 36px !important;
+  }
+  .sponsorHeader h3{
+    font-size: 23px !important;
+  }
+}
+
 
 /* exhibition page responsive  css start from here  */
 /* =========================================== */
@@ -2294,7 +2375,7 @@ Mobiles Menu
 /* ================================================ */
 @media(max-width:991px) {
   .latestheader {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   .latestNewsCard {
@@ -2314,12 +2395,22 @@ Mobiles Menu
     font-size: 32px;
   }
 }
+@media(max-width:400px) {
+  .latestheader {
+    margin-top: 2rem;
+  }
+}
 
 /* agenda page responsive css start from here  */
 /* =========================================== */
 @media(max-width:991px) {
   .agendaBody {
     margin-top: 9rem;
+  }
+}
+@media(max-width:400px) {
+  .agendaBody {
+    margin-top: 6rem;
   }
 }
 
@@ -2334,6 +2425,12 @@ Mobiles Menu
     margin-top: 1.5rem;
   }
 }
+@media(max-width:400px) {
+  .venue {
+    margin-top: 5rem;
+  }
+}
+
 
 /* contact page responsive css start from here  */
 /* ============================================ */
@@ -2376,6 +2473,9 @@ Mobiles Menu
     width: 95%;
     margin: 0 auto;
   }
+  .contactSection {
+    margin-top: 5rem;
+}
 }
 
 /* regitation page responsive css start from here  */
